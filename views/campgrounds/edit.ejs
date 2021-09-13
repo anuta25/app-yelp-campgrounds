@@ -1,15 +1,37 @@
 <% layout("layouts/boilerplate") %>
-        <h1>Edit Campground</h1>
+<div class="column">
+    <h1 class="text-center fw-bold fst-italic mb-4">Edit Campground</h1>
+       <div class="column-6 offset-3">
         <form action="/campgrounds/<%= campground._id%>?_method=PUT" method="POST">
-            <div>
-                <label for="title">Enter title</label>
-                <input type="text" id="title" name="campground[title]" value="<%=campground.title%>">
-            </div>
-            <div>
-               <label for="location">Enter location</label>
-               <input type="text" id="location" name="campground[location]" value ="<%=campground.location%>">
-            </div>
-       <button>Edit Campground</button>
+          <div class="mb-3">
+            <label for="title" class="form-label">Enter Title</label>
+            <input type="text" class="form-control" id="title" name="campground[title]" value="<%=campground.title%>">
+          </div>
+         <div class="mb-3">
+            <label for="location" class="form-label">Enter Location</label>
+            <input type="text" class="form-control" id="location" name="campground[location]" value="<%=campground.location%>" >
+         </div>
+         <div class="mb-3">
+            <label for="description" class="form-label">Enter Description</label>
+            <input type="text" class="form-control" id="description" name="campground[description]" value="<%=campground.description%>">
+         </div>
+         <div class="mb-3">
+            <label for="image" class="form-label">Enter URL Image</label>
+            <input type="text" class="form-control" id="image" name="campground[image]" value="<%=campground.image%>" >
+         </div>
+         <div class="mb-3">
+            <label for="price" class="form-label">Enter Price</label>
+               <div class="input-group mb-4">
+                     <input type="number"  id="price" class="form-control" aria-label="Dollar amount (with dot and two decimal places)" name="campground[price]" value="<%=campground.price%>">
+                     <span class="input-group-text">$</span>
+                    </div>
+          </div>
+              
+         <button class="btn btn-outline-success mb-4">Edit Campground</button>
        </form>
-       <a href="/campgrounds/<%=campground._id %>">Back To Campground</a>
+         </div>
+</div>
+       <a class=" text-center btn btn-success" href="/campgrounds/<%=campground._id %>">Back To Campground</a>
+
+
     
