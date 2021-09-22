@@ -13,3 +13,16 @@ Will execute the startMongo bat file, and the bat file will start mongo.exe proc
 ### npm run feed-db
 Will execute a script that will feed the mongo db with random data.
 
+
+# Screenshots
+
+<details><summary>Expand me</summary>
+
+![View Campground](https://github.com/anuta25/app-yelp-campgrounds/blob/main/screenshots/view_campground.PNG)
+
+![Edit Campground](https://github.com/anuta25/app-yelp-campgrounds/blob/main/screenshots/edit_campground.PNG)
+
+![New Campground](https://github.com/anuta25/app-yelp-campgrounds/blob/main/screenshots/new_campground.PNG)
+
+![New Campground Validations](https://github.com/anuta25/app-yelp-campgrounds/blob/main/screenshots/new_campground_validations.PNG)
+
