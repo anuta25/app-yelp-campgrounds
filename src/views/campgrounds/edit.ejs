@@ -5,46 +5,28 @@
          <form action="/campgrounds/<%= campground._id%>?_method=PUT" method="POST" novalidate class="validated-form">
             <div class="mb-3">
                <label for="title" class="form-label">Enter Title</label>
-               <input type="text" class="form-control" id="title" name="campground[title]" required
-                  value="<%=campground.title%>">
-               <div class="valid-feedback">
-                  Looks good!
-               </div>
+               <input type="text" class="form-control" id="title" name="campground[title]" value="<%=campground.title%>">
             </div>
             <div class="mb-3">
                <label for="location" class="form-label">Enter Location</label>
-               <input type="text" class="form-control" id="location" name="campground[location]" required
-                  value="<%=campground.location%>">
-               <div class="valid-feedback">
-                  Looks good!
-               </div>
+               <input type="text" class="form-control" id="location" name="campground[location]" value="<%=campground.location%>">
             </div>
             <div class="mb-3">
                <label for="description" class="form-label">Enter Description</label>
-               <input type="text" class="form-control" id="description" name="campground[description]" required
-                  value="<%=campground.description%>">
-               <div class="valid-feedback">
-                  Looks good!
-               </div>
+               <input type="text" class="form-control" id="description" name="campground[description]" value="<%=campground.description%>">
             </div>
             <div class="mb-3">
                <label for="image" class="form-label">Enter URL Image</label>
-               <input type="text" class="form-control" id="image" name="campground[image]" required
-                  value="<%=campground.image%>">
+               <input type="text" class="form-control" id="image" name="campground[image]" value="<%=campground.image%>">
             </div>
             <div class="mb-3">
                <label for="price" class="form-label">Enter Price</label>
                <div class="input-group mb-4">
                   <input type="number" id="price" class="form-control"
-                     aria-label="Dollar amount (with dot and two decimal places)" name="campground[price]" required
-                     value="<%=campground.price%>">
+                     aria-label="Dollar amount (with dot and two decimal places)" name="campground[price]" value="<%=campground.price%>">
                   <span class="input-group-text">$</span>
                </div>
-               <div class="valid-feedback">
-                  Looks good!
-               </div>
             </div>
-
             <button class="btn btn-outline-success mb-4">Edit Campground</button>
          </form>
       </div>

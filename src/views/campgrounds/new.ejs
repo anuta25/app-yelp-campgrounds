@@ -7,43 +7,27 @@
         <div class="mb-3">
           <label for="title" class="form-label">Enter Campground</label>
           <input type="text" class="form-control" id="title" name="campground[title]" aria-describedby="">
-          <div class="valid-feedback">
-            Looks good!
-          </div>
         </div>
         <div class="mb-3">
           <label for="location" class="form-label">Enter Location</label>
-          <input type="text" class="form-control" id="location" name="campground[location]" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
+          <input type="text" class="form-control" id="location" name="campground[location]">
         </div>
         <div class="mb-3">
           <label for="image" class="form-label">Enter URL Image</label>
-          <input type="text" class="form-control rounded mx-auto d-block" id="image" name="campground[image]" required>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
+          <input type="text" class="form-control rounded mx-auto d-block" id="image" name="campground[image]">
         </div>
         <div class="mb-3">
           <label for="description" class="form-label">Enter Description</label>
-          <textarea class="form-control" id="description" name="campground[description]" required></textarea>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
+          <textarea class="form-control" id="description" name="campground[description]"></textarea>
         </div>
         <div class="mb-3">
           <label for="price" class="form-label">Enter Price</label>
           <div class="input-group mb-4">
             <input type="number" id="price" class="form-control"
-              aria-label="Dollar amount (with dot and two decimal places)" name="campground[price]" required>
+              aria-label="Dollar amount (with dot and two decimal places)" name="campground[price]">
             <span class="input-group-text">$</span>
           </div>
-          <div class="valid-feedback">
-            Looks good!
-          </div>
         </div>
-
 
         <button class="btn btn-outline-success mb-4">Add Campground</button>
       </form>

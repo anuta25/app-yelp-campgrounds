@@ -1,12 +1,11 @@
-const mongoose = require('mongoose');
 const cities = require("./cities");
 const { places, descriptors } = require("./seedHelpers")
 
-main().catch(err => console.log(err));
-async function main() {
-    await mongoose.connect('mongodb://localhost:27017/yelp-camp');
-}
-const Campground = require("../models/campground");
+const { connectDB, closeConnection } = require('../db/mongoose');
+
+connectDB();
+
+const Campground = require("../models/campgroundSchema");
 
 function sample(array) {
     return array[Math.floor(Math.random() * array.length)]
@@ -32,5 +31,5 @@ const seedDB = async () => {
 }
 
 seedDB().then(() => {
-    mongoose.connection.close()
+    closeConnection()
 })

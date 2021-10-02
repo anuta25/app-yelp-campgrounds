@@ -1,12 +1,13 @@
 {
   "name": "yelpcamp",
   "version": "1.0.0",
-  "description": "",
+  "description": "Project in which I learn stuff about Express and Mongo",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js",
-    "start-mongo": "start startMongo.bat",
-    "feed-db": "node seeds/index.js"
+    "start": "nodemon src/app.js",
+    "start-mongo": "brew services start mongodb-community@4.4",
+    "stop-mongo": "brew services stop mongodb-community@4.4",
+    "feed-db": "node src/seeds/index.js"
   },
   "author": "Anuta Iuga",
   "license": "ISC",
@@ -14,8 +15,8 @@
     "ejs": "^3.1.6",
     "ejs-mate": "^3.0.0",
     "express": "^4.17.1",
-    "joi": "^17.4.2",
     "method-override": "^3.0.0",
-    "mongoose": "^6.0.4"
+    "mongoose": "^6.0.4",
+    "nodemon": "^2.0.13"
   }
 }
